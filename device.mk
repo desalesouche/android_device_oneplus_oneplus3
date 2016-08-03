@@ -152,6 +152,9 @@ PRODUCT_PACKAGES += \
     liboverlay \
     libtinyxml
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/FOSSConfig.xml:system/etc/FOSSConfig.xml
+
 # Doze mode
 PRODUCT_PACKAGES += \
     OneplusDoze
@@ -197,6 +200,10 @@ PRODUCT_COPY_FILES += \
 # Lights
 PRODUCT_PACKAGES += \
     lights.msm8996
+
+# LiveDisplay native
+PRODUCT_PACKAGES += \
+    libjni_livedisplay
 
 # Media
 PRODUCT_COPY_FILES += \
